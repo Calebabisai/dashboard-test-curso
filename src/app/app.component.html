@@ -1,0 +1,24 @@
+<app-encabezado></app-encabezado>
+
+<main>
+  <div id="dashboard">
+    <app-dashboard-elemento
+      [imagen]="{ src: 'estado.png', alt: 'Un simbolo de estado' }"
+      titulo="Estado del Servidor"
+    >
+      <app-estado></app-estado>
+    </app-dashboard-elemento>
+    <app-dashboard-elemento
+      [imagen]="{ src: 'globo.png', alt: 'Un globo' }"
+      titulo="Tráfico"
+    >
+      <app-trafico></app-trafico>
+    </app-dashboard-elemento>
+    <app-dashboard-elemento
+      [imagen]="{ src: 'lista.png', alt: 'Una lista de elementos' }"
+      titulo="Registro de soporte"
+    >
+      <app-registros></app-registros>
+    </app-dashboard-elemento>
+  </div>
+</main>
